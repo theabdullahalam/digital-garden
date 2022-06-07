@@ -6,7 +6,7 @@ pagestyle: /css/note.css
 <h2>{{ title }}</h2>
 {{ content | safe }}
 
-{% if not is_list %}
+{% if not hide_related %}
   <h2 class="related">Related</h2>
   {% for tag in tags %}
     {% if collections[tag].length > 1 and tag != "garden" %}

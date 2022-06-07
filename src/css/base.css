@@ -24,10 +24,10 @@ html body {
 }
 html body a {
   text-decoration: none;
-  color: rgb(98, 223, 179);
+  color: rgb(88, 220, 189);
 }
 html body a:visited {
-  color: rgb(98, 223, 179);
+  color: rgb(88, 220, 189);
 }
 html body ul {
   list-style: none;
@@ -41,7 +41,7 @@ html body ul li {
   border-bottom: 1px solid rgba(71, 255, 209, 0);
 }
 html body ul li:hover {
-  border-bottom: 1px solid rgba(98, 223, 179, 0.166);
+  border-bottom: 1px solid rgba(88, 220, 189, 0.268);
 }
 html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
   font-family: "Signika", sans-serif;
@@ -67,7 +67,7 @@ html body header a:first-child {
   font-style: initial;
 }
 html body header a:hover {
-  color: rgb(98, 223, 179);
+  color: rgb(88, 220, 189);
 }
 html body header a h1 {
   font-size: 2.5rem;
