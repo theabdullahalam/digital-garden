@@ -1,8 +1,16 @@
+@import 'vars';
+
 main {
   h2 {
     font-size: 4rem;
+    border-bottom: 1px solid $accent_color_transaprent;
+    padding-bottom: 1rem;
   }
   h3 {
     font-size: 2rem;
+  }
+
+  .related {    
+    margin-top: 8rem;
   }
 }

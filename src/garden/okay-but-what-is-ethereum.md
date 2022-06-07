@@ -1,6 +1,7 @@
 ---
 title: Okay but what IS Ethereum?
 tags: ["development", "web3", "ethereum", "technology"]
+date: Last Modified
 ---
 
 Something to do with blockchains, smart contracts, crypto-currencies and investments? Let's demystify the buzzwords.

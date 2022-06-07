@@ -2,5 +2,26 @@
 layout: base.njk
 pagestyle: /css/note.css
 ---
-<h2>{{title}}</h2>
+
+<h2>{{ title }}</h2>
 {{ content | safe }}
+
+{% if not is_list %}
+  <h2 class="related">Related</h2>
+  {% for tag in tags %}
+    {% if collections[tag].length > 1 and tag != "garden" %}
+      <h3>
+        tag: {{ tag }}
+      </h3>
+      <ul>
+        {% for note in collections[tag] %}
+          {% if note.url != page.url %}
+            <li>
+              <a href="{{ note.url | url}}">{{ note.data.title }}</a> 
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+{% endif %}
