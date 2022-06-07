@@ -1,0 +1,18 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+html a {
+  text-decoration: none;
+  color: tomato;
+}
+html a:visited {
+  color: tomato;
+}
+html body {
+  background: rgb(26, 26, 26);
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=base.css.map */

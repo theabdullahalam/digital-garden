@@ -12,6 +12,17 @@ module.exports = function (eleventyConfig) {
     open: true,
   });
 
+  // create collection of tags
+  eleventyConfig.addCollection("tagsList", function (collectionApi) {
+    const tagsList = new Set();
+    collectionApi.getAll().map(item => {
+      if (item.data.tags) { // handle pages that don't have tags
+        item.data.tags.map(tag => tagsList.add(tag))
+      }
+    });
+    return tagsList;
+  });
+
   return {
     dir: {
       // default: [site root]

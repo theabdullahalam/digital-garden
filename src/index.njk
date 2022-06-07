@@ -1,12 +1,10 @@
 ---
-layout: base.njk
+layout: home.njk
 title: Abdullah's Digital Garden
 ---
-<h1>Yoooo</h1>
-<ul>
-  {% for note in collections.notes -%}
-    <li>
-      <a href="{{ note.url }}">{{ note.data.title }}</a>
-    </li>
+
+<div class="main">
+  {% for t in collections.tagsList -%}
+    <a href="/tags/{{ t }}">{{t}}</a> <br />
   {% endfor %}
-</ul>
+</div>
