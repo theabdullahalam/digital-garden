@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Signika:wght@700&display=swap');
 @import 'fonts';
+@import 'vars';
 
 html {
   margin: 0;
@@ -22,9 +23,9 @@ html {
     
     a {
       text-decoration: none;
-      color: tomato;
+      color: $accent_color;
       &:visited{
-        color: tomato;
+        color: $accent_color;
       }
     }
 
@@ -38,14 +39,10 @@ html {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
 
-        border-bottom: 1px solid rgba(255, 99, 71, 0.141);
-
-        &:last-child {
-          border-bottom: unset;
-        }
-
+        border-bottom: 1px solid rgba(71, 255, 209, 0);
+        
         &:hover {
-          background: rgba(255, 99, 71, 0.11);
+          border-bottom: 1px solid $accent_color_transaprent
         }
         
         
@@ -81,7 +78,7 @@ html {
         }
 
         &:hover{
-          color: tomato;
+          color: $accent_color;
         }
 
         h1 {

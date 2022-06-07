@@ -24,10 +24,10 @@ html body {
 }
 html body a {
   text-decoration: none;
-  color: tomato;
+  color: rgb(98, 223, 179);
 }
 html body a:visited {
-  color: tomato;
+  color: rgb(98, 223, 179);
 }
 html body ul {
   list-style: none;
@@ -38,13 +38,10 @@ html body ul li {
   line-height: 1.8rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(255, 99, 71, 0.141);
-}
-html body ul li:last-child {
-  border-bottom: unset;
+  border-bottom: 1px solid rgba(71, 255, 209, 0);
 }
 html body ul li:hover {
-  background: rgba(255, 99, 71, 0.11);
+  border-bottom: 1px solid rgba(98, 223, 179, 0.166);
 }
 html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
   font-family: "Signika", sans-serif;
@@ -70,7 +67,7 @@ html body header a:first-child {
   font-style: initial;
 }
 html body header a:hover {
-  color: tomato;
+  color: rgb(98, 223, 179);
 }
 html body header a h1 {
   font-size: 2.5rem;

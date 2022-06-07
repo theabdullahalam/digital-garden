@@ -8,10 +8,10 @@ main .list-section {
 }
 main .list-section a {
   padding: 1rem;
-  border: 1px solid tomato;
+  border: 1px solid rgb(98, 223, 179);
 }
 main .list-section a:hover {
-  background: tomato;
+  background: rgb(98, 223, 179);
   color: black;
 }
 
