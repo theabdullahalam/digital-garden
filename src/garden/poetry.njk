@@ -1,0 +1,13 @@
+---
+title: Poetry List
+tags: poetry
+---
+<ul>
+{% for poem in collections.poetry %}
+  {% if poem.data.title != "Poetry List" %}
+    <li>
+      <a href="{{poem.url}}">{{poem.data.title}}</a>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>

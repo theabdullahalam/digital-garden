@@ -4,7 +4,30 @@ title: Abdullah's Digital Garden
 ---
 
 <div class="main">
-  {% for t in collections.tagsList -%}
-    <a href="/tags/{{ t }}">{{t}}</a> <br />
-  {% endfor %}
+
+  <section>
+    <h2>Welcome</h2>
+    <p>
+      Welcome to my personal website, which is now a
+      <a href="/garden/digital-garden">digital garden.</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Interesting Sections</h2>
+    <div class="list-section">
+      <a href="/garden/poetry">Poetry</a>
+      <a href="/garden/prose">Prose</a>
+      <a href="/garden/photography">Photography</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Browse By Tags</h2>
+    <div class="list-section">
+    {% for t in collections.tagsList -%}
+      <a href="/tags/{{ t }}">{{ t if t != "garden" else "all" }}</a>
+    {% endfor %}
+    </div>
+  </section>
 </div>

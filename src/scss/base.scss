@@ -1,21 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Signika:wght@700&display=swap');
+@import 'fonts';
+
 html {
   margin: 0;
   padding: 0;
 
-  a {
-    text-decoration: none;
-    color: tomato;
-    &:visited{
-      color: tomato;
-    }
+  * {
+    transition: all 0.25s;
   }
 
+  
   body {
+
     background: rgb(26, 26, 26);
     color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
-
+    font-family: 'Nunito', sans-serif;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
     
+    a {
+      text-decoration: none;
+      color: tomato;
+      &:visited{
+        color: tomato;
+      }
+    }
 
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        border-bottom: 1px solid rgba(255, 99, 71, 0.141);
+
+        &:last-child {
+          border-bottom: unset;
+        }
+
+        &:hover {
+          background: rgba(255, 99, 71, 0.11);
+        }
+        
+        
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Signika', sans-serif;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+
+      a {
+
+        font-size: 1.1rem;
+        font-style: italic;
+        
+        &.social-link{
+          margin-left: 1rem;
+          color: rgba(245, 245, 245, 0.34);
+        }
+
+        &:first-child{
+          margin-right: auto;
+          font-style: initial;
+        }
+
+        &:hover{
+          color: tomato;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+          font-family: 'Maka';
+        }
+
+      }
+
+
+
+    }
+
+    main {
+
+      margin-top: 5rem;
+
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+    }
   }
 }

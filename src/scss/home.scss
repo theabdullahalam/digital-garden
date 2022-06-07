@@ -1,0 +1,21 @@
+main {
+  section {
+    margin-bottom: 5rem;
+  }
+  .list-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    a {
+
+      padding: 1rem;
+      border: 1px solid tomato;
+
+      &:hover {
+        background: tomato;
+        color: black;
+      }
+    }
+  }
+}

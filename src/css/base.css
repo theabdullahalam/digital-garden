@@ -1,18 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Signika:wght@700&display=swap");
+@font-face {
+  font-family: "Maka";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Maka.otf) format("opentype");
+}
 html {
   margin: 0;
   padding: 0;
 }
-html a {
-  text-decoration: none;
-  color: tomato;
-}
-html a:visited {
-  color: tomato;
+html * {
+  transition: all 0.25s;
 }
 html body {
   background: rgb(26, 26, 26);
   color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+html body a {
+  text-decoration: none;
+  color: tomato;
+}
+html body a:visited {
+  color: tomato;
+}
+html body ul {
+  list-style: none;
+  padding: 0;
+}
+html body ul li {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 99, 71, 0.141);
+}
+html body ul li:last-child {
+  border-bottom: unset;
+}
+html body ul li:hover {
+  background: rgba(255, 99, 71, 0.11);
+}
+html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
+  font-family: "Signika", sans-serif;
+}
+html body p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+html body header {
+  display: flex;
+  align-items: center;
+}
+html body header a {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+html body header a.social-link {
+  margin-left: 1rem;
+  color: rgba(245, 245, 245, 0.34);
+}
+html body header a:first-child {
+  margin-right: auto;
+  font-style: initial;
+}
+html body header a:hover {
+  color: tomato;
+}
+html body header a h1 {
+  font-size: 2.5rem;
+  font-family: "Maka";
+}
+html body main {
+  margin-top: 5rem;
+}
+html body main h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=base.css.map */

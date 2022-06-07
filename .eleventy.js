@@ -6,11 +6,14 @@ module.exports = function (eleventyConfig) {
   // watch styles
   eleventyConfig.addWatchTarget("./src/css/");
 
+  // copy fonts
+  eleventyConfig.addPassthroughCopy("./src/fonts/");
+
 
   // open broswer on run
-  eleventyConfig.setBrowserSyncConfig({
-    open: true,
-  });
+  // eleventyConfig.setBrowserSyncConfig({
+  //   open: true,
+  // });
 
   // create collection of tags
   eleventyConfig.addCollection("tagsList", function (collectionApi) {
