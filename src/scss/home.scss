@@ -4,6 +4,11 @@ main {
   section {
     margin-bottom: 5rem;
   }
+
+  .bio{
+    max-width: 50%;
+  }
+
   .list-section {
     display: flex;
     flex-wrap: wrap;

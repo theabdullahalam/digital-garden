@@ -24,10 +24,10 @@ html body {
 }
 html body a {
   text-decoration: none;
-  color: rgb(88, 220, 189);
+  color: rgb(73, 187, 160);
 }
 html body a:visited {
-  color: rgb(88, 220, 189);
+  color: rgb(73, 187, 160);
 }
 html body ul {
   list-style: none;
@@ -41,14 +41,14 @@ html body ul li {
   border-bottom: 1px solid rgba(71, 255, 209, 0);
 }
 html body ul li:hover {
-  border-bottom: 1px solid rgba(88, 220, 189, 0.268);
+  border-bottom: 1px solid rgba(78, 198, 170, 0.337);
 }
 html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
   font-family: "Signika", sans-serif;
 }
 html body p {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 html body header {
   display: flex;
@@ -67,14 +67,14 @@ html body header a:first-child {
   font-style: initial;
 }
 html body header a:hover {
-  color: rgb(88, 220, 189);
+  color: rgb(73, 187, 160);
 }
 html body header a h1 {
   font-size: 2.5rem;
   font-family: "Maka";
 }
 html body main {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 }
 html body main h2 {
   font-size: 3rem;

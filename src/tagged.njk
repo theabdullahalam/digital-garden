@@ -15,6 +15,8 @@ permalink: /tags/{{ tag }}/
 <ul>
 {% set taglist = collections[ tag ] %}
 {% for post in taglist | reverse %}
-  <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+  {% if not post.data.private %}
+    <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+  {% endif %}
 {% endfor %}
 </ul>

@@ -1,4 +1,5 @@
 {
   "layout": "note.njk",
-  "tags": "garden"
+  "tags": "garden",
+  "date": "Last Modified"
 }

@@ -3,19 +3,20 @@ layout: base.njk
 pagestyle: /css/note.css
 ---
 
-<h2>{{ title }}</h2>
+<p class="last-modified">Last Modified - {{ page.date | readablePostDate }}</p>
+<h1>{{ title }}</h1>
 {{ content | safe }}
 
 {% if not hide_related %}
-  <h2 class="related">Related</h2>
+  <h1 class="related">Related</h1>
   {% for tag in tags %}
     {% if collections[tag].length > 1 and tag != "garden" %}
-      <h3>
+      <h2>
         tag: {{ tag }}
-      </h3>
+      </h2>
       <ul>
         {% for note in collections[tag] %}
-          {% if note.url != page.url %}
+          {% if note.url != page.url and not note.data.private %}
             <li>
               <a href="{{ note.url | url}}">{{ note.data.title }}</a> 
             </li>

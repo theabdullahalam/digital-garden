@@ -6,15 +6,14 @@ title: Abdullah's Digital Garden
 <div class="main">
 
   <section>
-    <h2>Welcome</h2>
-    <p>
-      Welcome to my personal website, which is now a
-      <a href="/garden/digital-garden">digital garden.</a>
+    <h2>Hi, I'm Abdullah.</h2>
+    <p class="bio">
+      I go places, click photographs, write stuff and build software. Welcome to my personal website, which is now a <a href="/garden/digital-garden">digital garden.</a>
     </p>
   </section>
 
   <section>
-    <h2>Interesting Sections</h2>
+    <h2>Maps</h2>
     <div class="list-section">
       <a href="/garden/poetry">Poetry</a>
       <a href="/garden/prose">Prose</a>
@@ -23,7 +22,7 @@ title: Abdullah's Digital Garden
   </section>
 
   <section>
-    <h2>Browse By Tags</h2>
+    <h2>Tags</h2>
     <div class="list-section">
     {% for t in collections.tagsList -%}
       <a href="/tags/{{ t }}">{{ t if t != "garden" else "all" }}</a>

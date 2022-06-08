@@ -1,0 +1,24 @@
+---
+title: Media without Social
+tags: ["social-media", "web", "technology"]
+---
+
+Today, people love to shit on social media. I too believe it to be a net negative. However, it is only that intersection of media with social that feels harmful, at least to me. Let's deconstruct that.
+
+I was discussing a project with a friend the other day, and she mentioned that she loves Pintrest because it is mostly media, without the social. It's just a bunch of people sharing pretty stuff. _C'est tout._ It's refreshing. The conversation derailed from there, but the thought stuck with me. That really is it, isn't it? The Internet works really well as an accesible source of media, and it works really well for connecting people across the planet. Services that focus solely on either of these don't really seem to have too adverse effects on mental health. It is the services that try to combine the two that seem to be problematic.
+
+I love blogs. I don't care that more than half of the internet thinks they're dying. I love blogs. They are incredibly content focused. They live in their little corners of the web, away from the noisy cacophony of unrelated content that social media is. When you visit a blog, _you're there._ The author decides what they want you to see and how they want you to see it. It almost feels like a soft rebellion. _We can still mould the Internet. It is still democratic and sufficiently decentralized._ And if you're interested in several bloggers, RSS feeds are still a thing. RSS Readers are still a thing. Nothing beats the unhurried, calm pace of perusing blogs that you discovered and treasure and actively chose to follow.
+
+Unsplash and Pintrest give a similar vibe. Unsplash has professional photographs far superior to the stuff you regularly see on Instagram, and yet, pictures will have barely any likes. (This is because they're more akin to saving posts on Instagram; the likes aren't tied with identity - more on that in a moment). Unsplash even has a profile system complete with display pictures and bios. But they are there merely for identity. The subject is the photography. Unsplash is very very content-centric, and it is incredible. You don't have to be famous, and you are not even incentivised to chase being famous. Share beautiful pictures, peruse beautiful pictures, be grateful to each other.
+
+Podcasts are another form of media that feel unbridled and pure. They are often considered analogous to on-demand, always-available radio, but I like to think of them as high-effort audio blogs. But really, they are a genre of media in and of themselves. Podcasts are _podcasts._ They are the way they want to be, and people _discover_ them in other podcasts or social platforms.
+
+And of course, _media,_ can include conventional forms of media, that existed pre-internet, that the internet merely helped distribute better - books, films, shows, etc.
+
+And on the social end of the spectrum you have direct communication platforms like email, Whatsapp, Discord, Slack, Zoom, etc. These let us do things never before possible in history, and they tend to be more or less neutral for mental health unless used excessively - like pretty much everything else.
+
+Platforms that combine the two, however, have an insiduous pull. You share media, which, by it's very nature, is a slice or a snapshot of a personality or an idea. Except, this time, the sharing and existence of the snapshot is associated with an identity. _Your_ identity. The metrics that the quality, frequency and timing of this content affects is often presented as being associated with that identity. And that's where the problems begin. The race to be increasingly famous, the struggle to protray better images of oneself consistently forever, the dangerous association of one's real world identity with the online version - stuff that has been said in a million places online in a million better ways - mostly seem, to me at least, coming from this fusion of social with media.
+
+I should re-iterate that, in my eyes, social media is not all negative, but a _net_ negative. It does and enables incredible, impactful and empowering things around the globe. But the egalitarian nature also means it enables defaming and harmful things equally. Add the infamous mental health issues on top of it, and you have something that, in the broader scheme of things, _feels,_ at least at the moment, a net negative. But that's highly subjective.
+
+What I will say is this - I think it is important to spend some time away from the intersection in that venn diagram of social and media, and take a stroll in just _one_ of the two circles, from time to time.

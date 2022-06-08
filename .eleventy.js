@@ -1,3 +1,5 @@
+const { DateTime } = require("luxon");
+
 module.exports = function (eleventyConfig) {
 
   // copy styles
@@ -8,6 +10,16 @@ module.exports = function (eleventyConfig) {
 
   // copy fonts
   eleventyConfig.addPassthroughCopy("./src/fonts/");
+
+  // copy img
+  eleventyConfig.addPassthroughCopy("./src/img/");
+
+  // readable date filter
+  eleventyConfig.addFilter("readablePostDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {
+        zone: "Asia/Kolkata",
+      }).setLocale('en').toLocaleString(DateTime.DATE_FULL);
+  });
 
 
   // open broswer on run

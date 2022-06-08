@@ -1,6 +1,9 @@
 main section {
   margin-bottom: 5rem;
 }
+main .bio {
+  max-width: 50%;
+}
 main .list-section {
   display: flex;
   flex-wrap: wrap;
@@ -8,10 +11,10 @@ main .list-section {
 }
 main .list-section a {
   padding: 1rem;
-  border: 1px solid rgb(88, 220, 189);
+  border: 1px solid rgb(73, 187, 160);
 }
 main .list-section a:hover {
-  background: rgb(88, 220, 189);
+  background: rgb(73, 187, 160);
   color: black;
 }
 

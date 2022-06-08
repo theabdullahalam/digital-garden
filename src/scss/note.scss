@@ -1,13 +1,24 @@
 @import 'vars';
 
 main {
-  h2 {
+
+  .last-modified {
+    color: rgba(245, 245, 245, 0.332);
+    font-size: 1rem;
+  }
+
+  h1 {
     font-size: 4rem;
     border-bottom: 1px solid $accent_color_transaprent;
     padding-bottom: 1rem;
+    margin-top: 2rem;
   }
-  h3 {
+  h2 {
     font-size: 2rem;
+  }
+
+  p {
+    margin-bottom: 2.5rem;
   }
 
   .related {    

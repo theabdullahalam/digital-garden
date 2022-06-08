@@ -5,7 +5,7 @@ hide_related: true
 ---
 <ul>
 {% for poem in collections.poetry %}
-  {% if poem.data.title != "Poetry List" %}
+  {% if poem.data.title != "Poetry List" and not poem.data.private %}
     <li>
       <a href="{{poem.url}}">{{poem.data.title}}</a>
     </li>
