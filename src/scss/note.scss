@@ -1,7 +1,6 @@
 @import 'vars';
 
 main {
-
   .last-modified {
     color: rgba(245, 245, 245, 0.332);
     font-size: 1rem;
@@ -23,22 +22,20 @@ main {
 
     img {
       max-width: 100%;
-      box-shadow: 0px -1px 31px 9px rgba(0,0,0,0.18);
-      -webkit-box-shadow: 0px -1px 31px 9px rgba(0,0,0,0.18);
-      -moz-box-shadow: 0px -1px 31px 9px rgba(0,0,0,0.18);
+      box-shadow: 0px -1px 31px 9px rgba(0, 0, 0, 0.18);
+      -webkit-box-shadow: 0px -1px 31px 9px rgba(0, 0, 0, 0.18);
+      -moz-box-shadow: 0px -1px 31px 9px rgba(0, 0, 0, 0.18);
     }
-
   }
 
-  .related {    
+  .related {
     margin-top: 8rem;
   }
 
   blockquote {
-    background: rgb(49, 49, 49);
+    background-color: rgb(32, 32, 32);
+    padding: 3rem;
     margin: 0;
-    padding: 2rem;
     font-style: italic;
   }
-
 }

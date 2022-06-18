@@ -24,9 +24,9 @@ main .related {
   margin-top: 8rem;
 }
 main blockquote {
-  background: rgb(49, 49, 49);
+  background-color: rgb(32, 32, 32);
+  padding: 3rem;
   margin: 0;
-  padding: 2rem;
   font-style: italic;
 }
 
