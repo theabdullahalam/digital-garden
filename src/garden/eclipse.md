@@ -1,7 +1,6 @@
 ---
 title: Frosty Eclipse
 tags: ["photography"]
-imgurl: "media/IMG_1713-2.jpg"
-layout: photograph.njk
+headerimage: "media/IMG_1713-2.jpg"
 ---
 ![](media/IMG_1713-2.jpg)

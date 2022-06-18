@@ -26,7 +26,7 @@ module.exports = function (eleventyConfig) {
 
   // convert "media/" to "/garden/media/"
   eleventyConfig.addFilter("mediaPath", (content_str) => {
-    return content_str.replace("src=\"media/", "src=\"/garden/media/")
+    return content_str.replace(/media\//g, "/garden/media/")
   });
 
 

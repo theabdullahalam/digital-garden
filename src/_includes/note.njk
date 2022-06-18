@@ -7,7 +7,7 @@ pagestyle: /css/note.css
 
 <p class="last-modified">Last Modified - {{ page.date | readablePostDate }}</p>
 <h1>{{ title }}</h1>
-{{ content | safe }}
+{{ content | mediaPath | safe }}
 
 {% if not hide_related %}
   <h1 class="related">Related</h1>
