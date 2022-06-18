@@ -1,0 +1,15 @@
+---
+title: My Photography
+tags: photography
+hide_related: true
+notestyle: /css/photography.css
+---
+<div class="photographs">
+{% for photograph in collections.photography %}
+  {% if photograph.data.title != "My Photography" and not photograph.data.private %}
+    <a href="{{ photograph.url }}" >
+    <img src="/garden/{{ photograph.data.imgurl }}" />
+    </a>
+  {% endif %}
+{% endfor %}
+</div>

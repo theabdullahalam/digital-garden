@@ -14,6 +14,12 @@ main h2 {
 main p {
   margin-bottom: 2.5rem;
 }
+main p img {
+  max-width: 100%;
+  box-shadow: 0px -1px 31px 9px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0px -1px 31px 9px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px -1px 31px 9px rgba(0, 0, 0, 0.18);
+}
 main .related {
   margin-top: 8rem;
 }

@@ -24,6 +24,11 @@ module.exports = function (eleventyConfig) {
       }).setLocale('en').toLocaleString(DateTime.DATE_FULL);
   });
 
+  // convert "media/" to "/garden/media/"
+  eleventyConfig.addFilter("mediaPath", (content_str) => {
+    return content_str.replace("src=\"media/", "src=\"/garden/media/")
+  });
+
 
   // open broswer on run
   // eleventyConfig.setBrowserSyncConfig({

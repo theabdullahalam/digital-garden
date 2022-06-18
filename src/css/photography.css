@@ -1,0 +1,11 @@
+.photographs {
+  column-count: 3;
+}
+.photographs a {
+  max-width: 100%;
+}
+.photographs a img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=photography.css.map */
