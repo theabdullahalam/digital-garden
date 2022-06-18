@@ -17,5 +17,11 @@ main p {
 main .related {
   margin-top: 8rem;
 }
+main blockquote {
+  background: rgb(49, 49, 49);
+  margin: 0;
+  padding: 2rem;
+  font-style: italic;
+}
 
 /*# sourceMappingURL=note.css.map */

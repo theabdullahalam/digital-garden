@@ -1,0 +1,27 @@
+@import 'vars';
+
+html {
+  body{
+    ul {
+    
+      list-style: none;
+      padding: 0;
+      padding-left: 0;
+    
+      li {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    
+        border-bottom: 1px solid rgba(71, 255, 209, 0);
+        
+        &:hover {
+          border-bottom: 1px solid $accent_color_transaprent
+        }
+        
+      }
+    }
+  }
+}
+

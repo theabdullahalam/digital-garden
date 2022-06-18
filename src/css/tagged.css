@@ -1,0 +1,17 @@
+html body ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 0;
+}
+html body ul li {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(71, 255, 209, 0);
+}
+html body ul li:hover {
+  border-bottom: 1px solid rgba(78, 198, 170, 0.337);
+}
+
+/*# sourceMappingURL=tagged.css.map */

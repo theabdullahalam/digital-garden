@@ -1,0 +1,21 @@
+html body main blockquote {
+  background-color: rgb(32, 32, 32);
+  padding: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-style: normal;
+}
+html body main blockquote p {
+  margin-bottom: 1rem;
+}
+html body main blockquote p:last-child {
+  font-weight: normal;
+  font-style: italic;
+}
+html body main blockquote p:first-child {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=quotes.css.map */

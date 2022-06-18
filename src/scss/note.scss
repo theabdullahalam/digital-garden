@@ -13,6 +13,7 @@ main {
     padding-bottom: 1rem;
     margin-top: 2rem;
   }
+
   h2 {
     font-size: 2rem;
   }
@@ -24,4 +25,12 @@ main {
   .related {    
     margin-top: 8rem;
   }
+
+  blockquote {
+    background: rgb(49, 49, 49);
+    margin: 0;
+    padding: 2rem;
+    font-style: italic;
+  }
+
 }

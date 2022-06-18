@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:sass": "sass --watch src/scss:src/css",
     "build:sass": "sass src/scss:src/css",
-    "watch:eleventy": "eleventy --serve",
-    "build:eleventy": "eleventy",
+    "watch:eleventy": "eleventy --serve --incremental",
+    "build:eleventy": "eleventy --incremental",
     "start": "build:sass; run-p watch:*",
     "build": "run-s build:*"
   },

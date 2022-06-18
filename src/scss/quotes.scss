@@ -1,0 +1,29 @@
+html {
+  body {
+    main {
+      blockquote {
+        background-color: rgb(32, 32, 32);
+        padding: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        font-style: normal;
+
+        p {
+          margin-bottom: 1rem;
+
+          &:last-child{
+            font-weight: normal;
+            font-style: italic;
+          }
+
+          &:first-child{
+            font-weight: bold;
+            font-style: normal;
+          }
+
+        }
+      }
+    }
+  }
+}

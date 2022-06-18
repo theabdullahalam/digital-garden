@@ -20,6 +20,48 @@ html {
     margin-right: 25vw;
     margin-top: 4rem;
     margin-bottom: 10rem;
+
+    display: grid;
+    grid-template-areas: 
+      "sidebar header"
+      "sidebar content"
+    ;
+
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+
+    header {
+      grid-area: header;
+    }
+
+    .sidebar {
+
+      grid-area: sidebar;
+      padding-right: 9rem;
+      margin-left: -18rem;
+      margin-top: 1rem;
+
+      ul {
+        list-style: none;
+
+        li {
+          a {
+
+            color: rgba(255, 255, 255, 0.243);
+            font-weight: bold;
+
+            &:hover {
+              color: $accent_color;
+            }
+          }
+        }
+
+      }
+    }
+
+    main {
+      grid-area: content;
+    }
     
     a {
       text-decoration: none;
@@ -30,21 +72,14 @@ html {
     }
 
     ul {
-      list-style: none;
-      padding: 0;
+
+      padding-left: 1rem;
 
       li {
         font-size: 1.2rem;
         line-height: 1.8rem;
         padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-
-        border-bottom: 1px solid rgba(71, 255, 209, 0);
-        
-        &:hover {
-          border-bottom: 1px solid $accent_color_transaprent
-        }
-        
+        padding-bottom: 0.5rem;        
       }
     }
 
@@ -53,8 +88,8 @@ html {
     }
 
     p {
-      font-size: 1.3rem;
-      line-height: 2rem;
+      font-size: 1.15rem;
+      line-height: 1.8rem;
     }
 
     header {

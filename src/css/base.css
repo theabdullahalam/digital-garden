@@ -21,6 +21,32 @@ html body {
   margin-right: 25vw;
   margin-top: 4rem;
   margin-bottom: 10rem;
+  display: grid;
+  grid-template-areas: "sidebar header" "sidebar content";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+}
+html body header {
+  grid-area: header;
+}
+html body .sidebar {
+  grid-area: sidebar;
+  padding-right: 9rem;
+  margin-left: -18rem;
+  margin-top: 1rem;
+}
+html body .sidebar ul {
+  list-style: none;
+}
+html body .sidebar ul li a {
+  color: rgba(255, 255, 255, 0.243);
+  font-weight: bold;
+}
+html body .sidebar ul li a:hover {
+  color: rgb(73, 187, 160);
+}
+html body main {
+  grid-area: content;
 }
 html body a {
   text-decoration: none;
@@ -30,25 +56,20 @@ html body a:visited {
   color: rgb(73, 187, 160);
 }
 html body ul {
-  list-style: none;
-  padding: 0;
+  padding-left: 1rem;
 }
 html body ul li {
   font-size: 1.2rem;
   line-height: 1.8rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(71, 255, 209, 0);
-}
-html body ul li:hover {
-  border-bottom: 1px solid rgba(78, 198, 170, 0.337);
 }
 html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
   font-family: "Signika", sans-serif;
 }
 html body p {
-  font-size: 1.3rem;
-  line-height: 2rem;
+  font-size: 1.15rem;
+  line-height: 1.8rem;
 }
 html body header {
   display: flex;
