@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ '/css/base.css' | url }}" />
-    <link rel="stylesheet" href="{{ pagestyle | url }}" />
-    <link rel="stylesheet" href="{{ notestyle | url }}" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{ '/css/base.css' | url }}"/>
+    <link rel="stylesheet" href="{{ pagestyle | url }}"/>
+    <link rel="stylesheet" href="{{ notestyle | url }}"/>
     <title>{{ title }}</title>
 
+    
     {# favicon #}
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
-    <link rel="manifest" href="/img/site.webmanifest" />
-    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#50a57a" />
-    <link rel="shortcut icon" href="/img/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="msapplication-config" content="/img/browserconfig.xml" />
-    <meta name="theme-color" content="#3e3e3e" />
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="/img/browserconfig.xml">
+    <meta
+    name="theme-color" content="#323232"> 
+    
+    
     {# fontawesome #}
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
   </head>
   <body>
     <header>
-      <a id="menu-bars" >
+      <a id="menu-bars">
         <i class="fa-solid fa-bars"></i>
       </a>
       <a href="/" id="title-link">
@@ -63,26 +65,23 @@
     <section class="sidebar">
       <ul>
         {% for t in collections.tagsList -%}
-        <li>
-          <a href="/tags/{{ t }}">{{ t if t != "garden" else "all" }}</a>
-        </li>
+          <li>
+            <a href="/tags/{{ t }}">{{ t if t != "garden" else "all" }}</a>
+          </li>
         {% endfor %}
       </ul>
     </section>
     <main>
       {{ content | safe }}
     </main>
-
     <script defer>
-      function toggleSideBar(e){
+      function toggleSideBar(e) {
         e.preventDefault()
         const sidebar = document.getElementsByClassName("sidebar")[0];
         sidebar.classList.toggle("visible");
       }
-
       const menubutton = document.getElementById("menu-bars")
       menubutton.addEventListener("click", toggleSideBar)
-
     </script>
   </body>
 </html>

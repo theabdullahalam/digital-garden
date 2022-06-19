@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/note.css" />
-    <link rel="stylesheet" href="." />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/css/base.css"/>
+    <link rel="stylesheet" href="/css/note.css"/>
+    <link rel="stylesheet" href="."/>
     <title>The early Internet was a forest</title>
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
-    <link rel="manifest" href="/img/site.webmanifest" />
-    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#50a57a" />
-    <link rel="shortcut icon" href="/img/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="msapplication-config" content="/img/browserconfig.xml" />
-    <meta name="theme-color" content="#3e3e3e" />
-
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="/img/browserconfig.xml">
+    <meta
+    name="theme-color" content="#323232"> 
+    
+    
     
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
   </head>
   <body>
     <header>
-      <a id="menu-bars" >
+      <a id="menu-bars">
         <i class="fa-solid fa-bars"></i>
       </a>
       <a href="/" id="title-link">
@@ -63,50 +65,56 @@
     <section class="sidebar">
       <ul>
         <li>
-          <a href="/tags/garden">all</a>
-        </li>
+            <a href="/tags/garden">all</a>
+          </li>
         <li>
-          <a href="/tags/collections">collections</a>
-        </li>
+            <a href="/tags/collections">collections</a>
+          </li>
         <li>
-          <a href="/tags/poetry">poetry</a>
-        </li>
+            <a href="/tags/poetry">poetry</a>
+          </li>
         <li>
-          <a href="/tags/photography">photography</a>
-        </li>
+            <a href="/tags/photography">photography</a>
+          </li>
         <li>
-          <a href="/tags/web">web</a>
-        </li>
+            <a href="/tags/web">web</a>
+          </li>
         <li>
-          <a href="/tags/internet">internet</a>
-        </li>
+            <a href="/tags/internet">internet</a>
+          </li>
         <li>
-          <a href="/tags/technology">technology</a>
-        </li>
+            <a href="/tags/technology">technology</a>
+          </li>
         <li>
-          <a href="/tags/software">software</a>
-        </li>
+            <a href="/tags/software">software</a>
+          </li>
         <li>
-          <a href="/tags/dev">dev</a>
-        </li>
+            <a href="/tags/dev">dev</a>
+          </li>
         <li>
-          <a href="/tags/social-media">social-media</a>
-        </li>
+            <a href="/tags/social-media">social-media</a>
+          </li>
         <li>
-          <a href="/tags/nostalgia">nostalgia</a>
-        </li>
+            <a href="/tags/nostalgia">nostalgia</a>
+          </li>
         <li>
-          <a href="/tags/fiction">fiction</a>
-        </li>
+            <a href="/tags/projects">projects</a>
+          </li>
         <li>
-          <a href="/tags/books">books</a>
-        </li>
+            <a href="/tags/prose">prose</a>
+          </li>
         <li>
-          <a href="/tags/scifi">scifi</a>
-        </li>
+            <a href="/tags/fiction">fiction</a>
+          </li>
         <li>
-          <a href="/tags/universe">universe</a>
-        </li>
+            <a href="/tags/books">books</a>
+          </li>
+        <li>
+            <a href="/tags/scifi">scifi</a>
+          </li>
+        <li>
+            <a href="/tags/universe">universe</a>
+          </li>
         
       </ul>
     </section>
@@ -228,17 +236,14 @@
   
 
     </main>
-
     <script defer>
-      function toggleSideBar(e){
+      function toggleSideBar(e) {
         e.preventDefault()
         const sidebar = document.getElementsByClassName("sidebar")[0];
         sidebar.classList.toggle("visible");
       }
-
       const menubutton = document.getElementById("menu-bars")
       menubutton.addEventListener("click", toggleSideBar)
-
     </script>
   </body>
 </html>
