@@ -10,6 +10,14 @@ html body main ul li {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba(71, 255, 209, 0);
 }
+@media screen and (max-width: 775px) {
+  html body main ul li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
 html body main ul li:hover {
   border-bottom: 1px solid rgba(78, 198, 170, 0.337);
 }
