@@ -1,82 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/note.css"/>
-    <link rel="stylesheet" href="."/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/note.css" />
+    <link rel="stylesheet" href="." />
     <title>A Posthumous Sorrow</title>
+
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-    <link rel="manifest" href="/img/site.webmanifest">
-    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#50a57a">
-    <link rel="shortcut icon" href="/img/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/img/browserconfig.xml">
-    <meta name="theme-color" content="#3e3e3e">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
+    <link rel="manifest" href="/img/site.webmanifest" />
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#50a57a" />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/img/browserconfig.xml" />
+    <meta name="theme-color" content="#3e3e3e" />
+
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <a href="/">
+      <a id="menu-bars" >
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <a href="/" id="title-link">
         <h1>ABDULLAH ALAM</h1>
       </a>
-      <a href="http://twitter.com/theabdullahalam/" class="social-link">twitter</a>
-      <a href="http://github.com/theabdullahalam/" class="social-link">github</a>
-      <a href="http://unsplash.com/theabdullahalam/" class="social-link">unsplash</a>
-      <a href="http://sentient-pixels.com/" class="social-link">travel</a>
-      <a href="/garden/contact" class="social-link">contact</a>
+      <div class="social-links">
+        <a href="http://twitter.com/theabdullahalam/" class="social-link">
+          <span class="text">twitter</span>
+          <i class="icon fa-brands fa-twitter"></i>
+        </a>
+        <a href="http://github.com/theabdullahalam/" class="social-link">
+          <span class="text">github</span>
+          <i class="icon fa-brands fa-github"></i>
+        </a>
+        <a href="http://unsplash.com/theabdullahalam/" class="social-link">
+          <span class="text">unsplash</span>
+          <i class="icon fa-brands fa-unsplash"></i>
+        </a>
+        <a href="http://sentient-pixels.com/" class="social-link">
+          <span class="text">travel</span>
+          <i class="icon fa-solid fa-route"></i>
+        </a>
+        <a href="/garden/contact" class="social-link">
+          <span class="text">contact</span>
+          <i class="icon fa-solid fa-address-card"></i>
+        </a>
+      </div>
     </header>
     <section class="sidebar">
       <ul>
         <li>
-            <a href="/tags/garden">all</a>
-          </li>
+          <a href="/tags/garden">all</a>
+        </li>
         <li>
-            <a href="/tags/collections">collections</a>
-          </li>
+          <a href="/tags/collections">collections</a>
+        </li>
         <li>
-            <a href="/tags/poetry">poetry</a>
-          </li>
+          <a href="/tags/poetry">poetry</a>
+        </li>
         <li>
-            <a href="/tags/photography">photography</a>
-          </li>
+          <a href="/tags/photography">photography</a>
+        </li>
         <li>
-            <a href="/tags/web">web</a>
-          </li>
+          <a href="/tags/web">web</a>
+        </li>
         <li>
-            <a href="/tags/internet">internet</a>
-          </li>
+          <a href="/tags/internet">internet</a>
+        </li>
         <li>
-            <a href="/tags/technology">technology</a>
-          </li>
+          <a href="/tags/technology">technology</a>
+        </li>
         <li>
-            <a href="/tags/software">software</a>
-          </li>
+          <a href="/tags/software">software</a>
+        </li>
         <li>
-            <a href="/tags/dev">dev</a>
-          </li>
+          <a href="/tags/dev">dev</a>
+        </li>
         <li>
-            <a href="/tags/social-media">social-media</a>
-          </li>
+          <a href="/tags/social-media">social-media</a>
+        </li>
         <li>
-            <a href="/tags/nostalgia">nostalgia</a>
-          </li>
+          <a href="/tags/nostalgia">nostalgia</a>
+        </li>
         <li>
-            <a href="/tags/fiction">fiction</a>
-          </li>
+          <a href="/tags/fiction">fiction</a>
+        </li>
         <li>
-            <a href="/tags/books">books</a>
-          </li>
+          <a href="/tags/books">books</a>
+        </li>
         <li>
-            <a href="/tags/scifi">scifi</a>
-          </li>
+          <a href="/tags/scifi">scifi</a>
+        </li>
         <li>
-            <a href="/tags/universe">universe</a>
-          </li>
+          <a href="/tags/universe">universe</a>
+        </li>
         
       </ul>
     </section>
@@ -260,5 +290,17 @@ A posthumous sorrow.</p>
   
 
     </main>
+
+    <script defer>
+      function toggleSideBar(e){
+        e.preventDefault()
+        const sidebar = document.getElementsByClassName("sidebar")[0];
+        sidebar.classList.toggle("visible");
+      }
+
+      const menubutton = document.getElementById("menu-bars")
+      menubutton.addEventListener("click", toggleSideBar)
+
+    </script>
   </body>
 </html>

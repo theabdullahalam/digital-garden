@@ -10,9 +10,7 @@ html {
     transition: all 0.25s;
   }
 
-  
   body {
-
     background: rgb(18, 18, 18);
     color: whitesmoke;
     font-family: 'Nunito', sans-serif;
@@ -21,17 +19,46 @@ html {
     margin-top: 4rem;
     margin-bottom: 10rem;
 
+    @media screen and (max-width: 1700px) {
+      margin-right: 15vw;
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin-right: 8vw;
+    }
+
+    @media screen and (max-width: 975px) {
+      margin-right: 2rem;
+    }
+
+    @media screen and (max-width: 775px) {
+      margin-top: 1rem;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
     display: grid;
-    grid-template-areas: 
-      "sidebar header"
-      "sidebar content"
-    ;
+    grid-template-areas:
+      'sidebar header'
+      'sidebar content';
 
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
 
-    header {
-      grid-area: header;
+    @media screen and (max-width: 775px) {
+      grid-template-areas:
+        'header'
+        'content';
+
+      grid-template-columns: initial;
+    }
+
+    @media screen and (max-width: 775px) {
+      .sidebar.visible {
+        margin-left: 0 !important;
+      }
     }
 
     .sidebar {
@@ -41,49 +68,81 @@ html {
       margin-left: -18rem;
       margin-top: 1rem;
 
+      @media screen and (max-width: 1200px) {
+        margin-left: -14rem;
+      }
+
+      @media screen and (max-width: 875px) {
+        margin-left: -12rem;
+        padding-right: 5rem;
+      }
+
+      @media screen and (max-width: 775px) {
+        // margin-left: -1rem;
+        margin-left: -75vw;
+        margin-right: 0;
+        padding-right: 0;
+        margin-top: 3rem;
+
+        position: absolute;
+        background: rgb(18, 18, 18);
+        border: 2px solid $accent_color_transaprent;
+        border-radius: 1rem;
+        width: 70vw;
+      }
+
       ul {
         list-style: none;
 
         li {
-          a {
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
 
+          a {
             color: rgba(255, 255, 255, 0.243);
             font-weight: bold;
+
+            @media screen and (max-width: 775px) {
+              color: rgba(255, 255, 255, 0.784);
+            }
 
             &:hover {
               color: $accent_color;
             }
           }
         }
-
       }
     }
 
     main {
       grid-area: content;
     }
-    
+
     a {
       text-decoration: none;
       color: $accent_color;
-      &:visited{
+      &:visited {
         color: $accent_color;
       }
     }
 
     ul {
-
       padding-left: 1rem;
 
       li {
         font-size: 1.2rem;
         line-height: 1.8rem;
         padding-top: 0.5rem;
-        padding-bottom: 0.5rem;        
+        padding-bottom: 0.5rem;
       }
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-family: 'Signika', sans-serif;
     }
 
@@ -93,41 +152,76 @@ html {
     }
 
     header {
+      grid-area: header;
       display: flex;
       align-items: center;
 
+      @media screen and (max-width: 775px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #title-link {
+        margin-right: auto;
+      }
+
       a {
-
         font-size: 1.1rem;
-        font-style: italic;
-        
-        &.social-link{
-          margin-left: 1rem;
+        // font-style: italic;
+
+        &.social-link {
+          margin-left: 3rem;
           color: rgba(245, 245, 245, 0.34);
+
+          @media screen and (max-width: 845px) {
+            margin-left: 2.5rem;
+          }
+
+          @media screen and (max-width: 775px) {
+            margin-right: 1.5rem;
+            margin-left: 0;
+          }
+
+          .text {
+            display: none;
+          }
         }
 
-        &:first-child{
-          margin-right: auto;
+        &:first-child {
           font-style: initial;
+
+          @media screen and (max-width: 775px) {
+            margin-right: 1.5rem;
+            margin-left: 0;
+          }
         }
 
-        &:hover{
+        &:hover {
           color: $accent_color;
         }
 
         h1 {
           font-size: 2.5rem;
           font-family: 'Maka';
-        }
 
+          @media screen and (max-width: 775px) {
+            margin-bottom: 1rem;
+            font-size: 3rem;
+          }
+        }
       }
 
+      #menu-bars {
+        display: none;
+        cursor: pointer;
 
-
+        @media screen and (max-width: 775px) {
+          display: initial;
+        }
+      }
     }
 
     main {
-
       margin-top: 2.5rem;
 
       h2 {
