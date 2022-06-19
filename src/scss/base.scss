@@ -134,6 +134,13 @@ html {
         line-height: 1.8rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+
+        @media screen and (max-width: 775px) {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+        }
       }
     }
 
@@ -149,6 +156,11 @@ html {
     p {
       font-size: 1.15rem;
       line-height: 1.8rem;
+
+      @media screen and (max-width: 775px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
     }
 
     header {
@@ -207,6 +219,7 @@ html {
           @media screen and (max-width: 775px) {
             margin-bottom: 1rem;
             font-size: 3rem;
+            font-weight: normal;
           }
         }
       }

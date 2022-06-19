@@ -129,6 +129,14 @@ html body ul li {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+@media screen and (max-width: 775px) {
+  html body ul li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
 html body h1,
 html body h2,
 html body h3,
@@ -140,6 +148,12 @@ html body h6 {
 html body p {
   font-size: 1.15rem;
   line-height: 1.8rem;
+}
+@media screen and (max-width: 775px) {
+  html body p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 html body header {
   grid-area: header;
@@ -196,6 +210,7 @@ html body header a h1 {
   html body header a h1 {
     margin-bottom: 1rem;
     font-size: 3rem;
+    font-weight: normal;
   }
 }
 html body header #menu-bars {
