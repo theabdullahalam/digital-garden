@@ -175,6 +175,10 @@ html {
 
       #title-link {
         margin-right: auto;
+
+        @media screen and (max-width: 775px) {
+          margin-top: -1rem;
+        }
       }
 
       a {
@@ -225,8 +229,11 @@ html {
       }
 
       #menu-bars {
+
         display: none;
         cursor: pointer;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
 
         @media screen and (max-width: 775px) {
           display: initial;

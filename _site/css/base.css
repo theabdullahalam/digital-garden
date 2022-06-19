@@ -169,6 +169,11 @@ html body header {
 html body header #title-link {
   margin-right: auto;
 }
+@media screen and (max-width: 775px) {
+  html body header #title-link {
+    margin-top: -1rem;
+  }
+}
 html body header a {
   font-size: 1.1rem;
 }
@@ -216,6 +221,8 @@ html body header a h1 {
 html body header #menu-bars {
   display: none;
   cursor: pointer;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 @media screen and (max-width: 775px) {
   html body header #menu-bars {
