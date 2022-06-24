@@ -59,6 +59,7 @@ html {
     @media screen and (max-width: 775px) {
       .sidebar.visible {
         margin-left: 0 !important;
+        z-index: 1;
       }
     }
 
