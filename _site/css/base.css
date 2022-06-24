@@ -112,6 +112,8 @@ html body .sidebar ul li a:hover {
 }
 html body main {
   grid-area: content;
+  min-width: 0;
+  overflow: auto;
 }
 html body a {
   text-decoration: none;
