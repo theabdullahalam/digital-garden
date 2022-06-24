@@ -2,19 +2,22 @@
 title: Projects
 tags: ["projects"]
 hide_related: true
+notestyle: /css/projects.css
 ---
 <p>
   Personal or professional projects, small or big, software or not (mostly software).
 </p>
-{# <p>
-  List of notes tagged "prose":
-</p>
-<ul>
-{% for p in collections.prose %}
-  {% if p.data.title != "Prose" and not p.data.private %}
-    <li>
-      <a href="{{p.url}}">{{p.data.title}}</a>
-    </li>
+
+<div class="projectlist">
+{% for p in collections.projects %}
+
+  {% if p.data.title != "Projects" and not p.data.private %}    
+    <a class="project" href="{{p.url}}">
+      <h3 class="title">{{ p.data.title }}</h3>
+      <p class="description">
+        {{ p.data.description }}
+      </p>
+    </a>
   {% endif %}
 {% endfor %}
-</ul> #}
+</div>

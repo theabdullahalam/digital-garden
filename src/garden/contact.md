@@ -2,4 +2,4 @@
 title: Contact
 hide_related: true
 ---
-The contact page
+Find me on social media using the links at the top, or drop an email to **abdullahalam@protonmail.com.**

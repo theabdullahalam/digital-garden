@@ -1,0 +1,39 @@
+.projectlist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  .project {
+    width: 28%;
+    background: rgb(28, 28, 28);
+    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: whitesmoke;
+    display: block;
+
+    .title {
+      font-size: 1.8rem;
+      border-bottom: 1px solid rgba(245, 245, 245, 0.16);
+      margin-top: 0;
+      padding-bottom: 1rem;
+      margin-bottom: 0;
+    }
+
+    .description {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      background: whitesmoke;
+      color: rgb(24, 24, 24);
+      cursor: pointer;
+
+      .title {
+        border-bottom: 1px solid rgba(20, 20, 20, 0.16);
+      }
+    }
+    
+  }
+
+}
