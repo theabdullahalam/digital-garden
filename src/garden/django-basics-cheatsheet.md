@@ -2,6 +2,11 @@
 title: Django Basics Cheatsheet
 tags: ["software", "cheatsheets"]
 ---
+## Using this cheatsheet
+This cheatsheet was built for personal use while learning django. Rather than a generalized list of possible scenarios, example code implementing most common features are listed. I usually pick and choose parts from this sheet when I know exactly what I want and just need the specific syntax.
+
+Since [this](/) [digital garden](/garden/digital-garden) is a public document, you are welcome to contribute to it on [GitHub](https://github.com/theabdullahalam/digital-garden/).
+
 ## Installation
 ```shell
 pip install django
