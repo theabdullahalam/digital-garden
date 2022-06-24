@@ -11,6 +11,10 @@ main h1 {
 main h2 {
   font-size: 2rem;
 }
+main h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
 main p {
   margin-bottom: 2.5rem;
 }
@@ -29,6 +33,12 @@ main blockquote {
   padding: 3rem;
   margin: 0;
   font-style: italic;
+}
+main p + .code-toolbar {
+  margin-top: -2rem;
+}
+main .code-toolbar {
+  margin-bottom: 3rem;
 }
 
 /*# sourceMappingURL=note.css.map */

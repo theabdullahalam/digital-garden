@@ -1,5 +1,5 @@
 ---
 title: 
 description: 
-tags: ["project"]
+tags: ["projects"]
 ---

@@ -17,6 +17,9 @@ module.exports = function (eleventyConfig) {
   // copy garden media
   eleventyConfig.addPassthroughCopy("./src/garden/media");
 
+  // copy js
+  eleventyConfig.addPassthroughCopy("./src/js/");
+
   // readable date filter
   eleventyConfig.addFilter("readablePostDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, {

@@ -8,7 +8,7 @@ My personal travel blog, currently live at [sentient-pixels.com](https://sentien
 - Live: [sentient-pixels.com](https://sentient-pixels.com)
 - Source Code: [github.com/theabdullahalam/sp-travel](https://github.com/theabdullahalam/sp-travel)
 - Stack:
-	- Django
+	- [Django](/garden/django)
 	- PostGreSQL
 	- HTML5/CSS3/JS
 	- Nginx
