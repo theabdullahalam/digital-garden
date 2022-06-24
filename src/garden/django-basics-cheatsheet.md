@@ -96,3 +96,191 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
 ```
+
+
+## Basic Website
+### views.py
+```python
+from django.shortcuts import render
+from django.core.paginator import Paginator
+from .models import Post, PostType
+
+def index(request):
+    return render(request, 'index.html')
+
+def post(request, slug):
+    # FETCH OBJ
+    post_obj=Post.objects.get(slug = str(slug))
+
+    # HUMAN FRIENDLY DATE
+    hfr_date = post_obj.created.strftime('%e %b %Y')
+    post_obj.hfr_date = hfr_date
+
+    # CREATE CONTEXT
+    context = {
+        'post': post_obj,
+    }
+
+    # RETURN
+    return render(request, 'post.html', context=context)
+
+def posts(request, pageno=1):
+    # FETCH ALL POSTS
+    posts = Post.objects.filter(p_type__type_name = typename).exclude(slug='about').order_by('-created', 'title')
+
+    # PAGINATE
+    paginator = Paginator(posts, 10)
+    page_num = int(pageno)
+    page_obj = paginator.get_page(page_num)
+    posts = page_obj.object_list
+
+    # HUMAN FRIENDLY DATE
+    for post in posts:
+        hfr_date = post.created.strftime('%e %b %Y')
+        post.hfr_date = hfr_date
+
+        post.preview = str(post.content).split('</p>')[0].split('<p>')[1]
+
+    # SET CONTEXT
+    context = {
+        'posts': posts,
+        'pageinator': paginator,
+        'page_obj': page_obj,
+    }
+
+    # RETURN
+    return render(request, 'postlist.html', context=context)
+
+```
+
+### App urls.py
+```python
+from django.urls import path
+from . import views
+ 
+urlpatterns = [
+
+    path('', views.index, name='index'),
+
+    path('post/<slug:slug>', views.post, name='post'),
+    path('posts', views.posts, name='posts'),
+    path('posts/', views.posts, name='posts'),
+    path('posts/page/<int:pageno>', views.posts, name='posts'),
+
+]
+```
+
+### Project urls.py
+```python
+from django.contrib import admin
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+from django.conf.urls import url
+ 
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('main.urls')),
+    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
+] + static(
+    settings.STATIC_URL,
+    document_root=settings.STATIC_ROOT
+) + static(
+    settings.MEDIA_URL,
+    document_root=settings.MEDIA_ROOT
+)
+```
+
+## models.py
+### Basic Structure
+```python
+from django.db import models
+from django.utils import timezone
+from ckeditor_uploader.fields import RichTextUploadingField
+from django.utils.text import slugify
+ 
+class PostType(models.Model):
+    type_name = models.CharField(max_length=30)
+
+    def __str__(self):
+        return str(self.type_name)
+ 
+class Post(models.Model):
+    image_file = models.ImageField(upload_to='photographs')
+    title = models.CharField(max_length=250)
+    p_type=models.ForeignKey(PostType, on_delete=models.CASCADE)
+    content = RichTextUploadingField(max_length=14000)
+    created = models.DateTimeField(editable=False)
+    modified = models.DateTimeField(editable=False)
+    slug = models.SlugField(unique=True, max_length=100, blank=True)
+
+    def save(self, *args, **kwargs):
+        # UPDATE TIMESTAMPS
+        if not self.id:
+            self.created = timezone.now()
+        self.modified = timezone.now()
+
+        # GENERATE SLUG
+        if not self.slug:
+            self.slug = slugify(self.title)
+        return super(Post, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return str(self.title)
+
+    class Meta:
+        verbose_name = 'Post'
+        verbose_name_plural = 'Posts'
+
+```
+
+### Many to Many Relation
+Note that the ''ManyToManyField'' is only defined in one model. It doesn't matter which model has the field, but if in doubt, it should be in the model that will be interacted with in a form.
+```python
+class Topping(models.Model):
+    # ...
+    pass
+
+class Pizza(models.Model):
+    # ...
+    toppings = models.ManyToManyField(Topping)
+```
+
+### ImageField Access Examples
+```python
+car = Car.objects.get(name="57 Chevy")
+car.photo
+::::::<ImageFieldFile: cars/chevy.jpg>
+car.photo.name
+::::::'cars/chevy.jpg'
+car.photo.path
+::::::'/media/cars/chevy.jpg'
+car.photo.url
+::::::'http://media.example.com/cars/chevy.jpg'
+```
+
+## Django Admin
+### To create ''superuser''
+```shell
+python manage.py createsuperuser
+```
+
+### admin.py
+```python
+from django.contrib import admin
+from .models import Post, PostType
+
+@admin.register(PostType)
+class PostTypeAdmin(admin.ModelAdmin):
+    list_display = ('type_name',)
+    ordering = ('type_name',)
+    search_fields = ('type_name',)
+
+@admin.register(Post)
+class PostAdmin(admin.ModelAdmin):
+    list_display = ('title', 'p_type')
+    ordering = ('title',)
+    search_fields = ('title', 'p_type',)
+```
+
+
