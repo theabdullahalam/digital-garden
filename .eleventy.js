@@ -40,13 +40,19 @@ module.exports = function (eleventyConfig) {
 
   // create collection of tags
   eleventyConfig.addCollection("tagsList", function (collectionApi) {
-    const tagsList = new Set();
+    let tagsList = [];
     collectionApi.getAll().map(item => {
       if (item.data.tags) { // handle pages that don't have tags
-        item.data.tags.map(tag => tagsList.add(tag))
+        item.data.tags.map(tag => {
+            if (tag !== "garden") {
+              tagsList.push(tag)
+            }        
+        });
       }
     });
-    return tagsList;
+    tagsList.sort()
+    tagsList.splice(0, 0, "garden")
+    return new Set(tagsList);
   });
 
   return {
